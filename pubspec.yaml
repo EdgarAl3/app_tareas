@@ -1,0 +1,56 @@
+name: app_tareas
+description: "Aplicación Flutter para gestión de tareas personales"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.9.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Iconos estilo iOS
+  cupertino_icons: ^1.0.8
+  
+  # Fuentes personalizadas de Google
+  google_fonts: ^6.3.2
+  
+  # Base de datos SQLite local
+  sqflite: ^2.3.0
+  
+  # Utilidades para manejo de rutas
+  path: ^1.9.0
+  
+  # Internacionalización y formatos de fecha
+  intl: ^0.20.2
+  
+  # Gestión de estado - Patrón Provider
+  provider: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lints y mejores prácticas para Flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  # Assets de la aplicación
+  assets:
+    - assets/imagenes/logo.jpeg
+  
+  uses-material-design: true
+  
+  # Fuentes personalizadas
+  fonts:
+    - family: MomoTrustDisplay
+      fonts:
+        - asset: assets/fonts/MomoTrustDisplay-Regular.ttf
+    - family: MomoSignature
+      fonts:
+        - asset: assets/fonts/MomoSignature-Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
